@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #1c1d1c;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .wrapper {
+  background-color: #212221;
+  width: 300px;
+  padding: 2pc 1pc;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1pc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.224);
+}
+.container .wrapper .button {
+  width: 50px;
+  height: 50px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: none;
+  border-radius: 50%;
+  transition: all 0.1s ease-in-out;
+  font-size: 1pc;
+}
+
+.container .wrapper .button:active {
+  background: #ffffff19;
+  border-radius: 50%;
+}
+
+.button {
+  color: #fff;
+}
+
+.button:nth-child(3),
+.button:nth-child(4),
+.button:nth-child(5),
+.button:nth-child(6),
+.button:nth-child(10),
+.button:nth-child(14),
+.button:nth-child(18),
+.button:nth-child(22) {
+  color: rgb(255, 128, 0);
+}
+
+.container .wrapper #output {
+  width: 80%;
+  height: 2.5pc;
+  font-size: 1.8pc;
+  /* outline: none; */
+  color: #fff;
+  background: none;
+  border: none;
+  transform: translateY(12px);
+  overflow-x: hidden;
+  scrollbar-color: #eaeaea #888888;
+  overflow-y: hidden;
+  text-align: right;
+}
+
+.container .wrapper div {
+  width: 80%;
+  height: 1px;
+  background-color: #c9c9c9;
+}
